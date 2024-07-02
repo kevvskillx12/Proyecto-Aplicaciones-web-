@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen prueba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrodeinformacion">
+            <span>Reglas de tu examen en línea</span>
+        </div>
+        <div class="lista">
+            <div class="informacion">1. Solo tendrás <span>15 segundos</span> para responder cada pregunta.</div>
+            <div class="informacion">2. Una vez que selecciones tu respuesta no se puede deshacer así que presta mucha atención.</div>
+            <div class="informacion">3. Cuando se acabe el tiempo ya no podrás seleccionar ninguna opción.</div>
+            <div class="informacion">4. Igualmente cuando el tiempo haya iniciado no puedes salirte del examen.</div>
+            <div class="informacion">5. Tus puntos se basan en cuántas respuestas correctas elegiste.</div>
+        </div>
+        <div class="botominicial">
+            <button onclick="iniciarExamen()">Iniciar Examen</button>
+        </div>
+        <div class="botones">
+        </div>
+
+        <div id="examen" style="display: none;">
+            <div class="quiz-container">
+                <div id="quiz"></div>
+                <button id="next-btn" style="display: none;" onclick="nextQuestion()">Siguiente Pregunta</button>
+            </div>
+        </div>
+
+        <div id="resultado" style="display: none;">
+            <div class="quiz-container">
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
